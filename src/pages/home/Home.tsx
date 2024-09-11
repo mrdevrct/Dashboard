@@ -7,6 +7,7 @@ import "./Home.css";
 import Features from "../../components/features/Feature";
 import Chart from "../../components/chart/Chart";
 import WidgeteSm from "../../components/widgeteSm/WidgeteSm";
+import WidgeteLg from "../../components/widgeteLg/widgeteLg";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Chart title="Sale Month" data={xAxisData} dataKey="sale" grid />
       <div className="homeWighets">
         <WidgeteSm />
+        <WidgeteLg />
       </div>
     </div>
   );

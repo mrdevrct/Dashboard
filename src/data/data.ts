@@ -1,4 +1,5 @@
 import { AxisDataType } from "../utils/Axis.types";
+import { TransactionsType } from "../utils/Transaction.types";
 import { UsersType } from "../utils/Users.types";
 
 const xAxisData: AxisDataType = [
@@ -40,4 +41,31 @@ const users:UsersType = [
   }
 ];
 
-export { xAxisData , users };
+const transactions:TransactionsType  = [
+  {
+    id: 1,
+    customer: "Mahdi Salehi",
+    userImg: "images/IMG_20240909_145706.jpg",
+    date : "2 May 2024",
+    amount: 195.5,
+    status: "Declined",
+  },
+  {
+    id: 2,
+    customer: "Mohammad Abdolahzadeh",
+    userImg: "images/IMG_20240909_145706.jpg",
+    date : "22 Sep 2024",
+    amount: 199,
+    status: "Approved"
+  },
+  {
+    id: 3,
+    customer: "Seyed Rasool Hosseini",
+    userImg: "images/IMG_20240909_145706.jpg",
+    date : "14 Feb 2024",
+    amount: 189,
+    status: "Pending"
+  },
+];
+
+export { xAxisData , users , transactions };
