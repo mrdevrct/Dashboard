@@ -1,4 +1,5 @@
 import { AxisDataType } from "../utils/Axis.types";
+import { UsersType } from "../utils/Users.types";
 
 const xAxisData: AxisDataType = [
   { name: "Jan", sale: 112_000 },
@@ -15,4 +16,28 @@ const xAxisData: AxisDataType = [
   { name: "Des", sale: 97_000 },
 ];
 
-export { xAxisData };
+const users:UsersType = [
+  {
+    id: 1,
+    firstname: "Mahdi",
+    lastname: "Salehi",
+    skill: "Front-end Developer",
+    img: "images/IMG_20240909_145706.jpg"
+  },
+  {
+    id: 2,
+    firstname: "Mohammad",
+    lastname: "Abdolahzadeh",
+    skill: "Front-end Developer",
+    img: "images/IMG_20240909_145706.jpg"
+  },
+  {
+    id: 3,
+    firstname: "Seyed Rasool",
+    lastname: "Hosseini",
+    skill: "Front-end Developer",
+    img: "images/IMG_20240909_145706.jpg"
+  }
+];
+
+export { xAxisData , users };

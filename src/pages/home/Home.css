@@ -1,3 +1,8 @@
-.home{
-    flex: 4;
+.home {
+  flex: 4;
+}
+
+.homeWighets {
+  display: flex;
+  margin: 20px;
 }
