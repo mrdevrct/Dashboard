@@ -1,4 +1,5 @@
 import { AxisDataType } from "../utils/Axis.types";
+import { ProductsType } from "../utils/Products.types";
 import { TransactionsType } from "../utils/Transaction.types";
 import { UserRowsType } from "../utils/UserRows.types";
 import { UsersType } from "../utils/Users.types";
@@ -76,7 +77,7 @@ const userRows: UserRowsType = [
     status: "non-active",
     transactions: 12,
     img: "images/IMG_20240909_145706.jpg",
-    email : "mahdisalehi@gmail.com"
+    email: "mahdisalehi@gmail.com",
   },
   {
     id: 2,
@@ -84,7 +85,7 @@ const userRows: UserRowsType = [
     status: "active",
     transactions: 100,
     img: "images/IMG_20240909_145706.jpg",
-    email : "mohammadabdolahzadeh@gmail.com"
+    email: "mohammadabdolahzadeh@gmail.com",
   },
   {
     id: 3,
@@ -92,7 +93,7 @@ const userRows: UserRowsType = [
     status: "active",
     transactions: 21,
     img: "images/IMG_20240909_145706.jpg",
-    email : "seyedrasoolhosseini@gmail.com"
+    email: "seyedrasoolhosseini@gmail.com",
   },
   {
     id: 4,
@@ -100,7 +101,7 @@ const userRows: UserRowsType = [
     status: "active",
     transactions: 201,
     img: "images/IMG_20240909_145706.jpg",
-    email : "aminsaeedi@gmail.com"
+    email: "aminsaeedi@gmail.com",
   },
   {
     id: 5,
@@ -108,8 +109,41 @@ const userRows: UserRowsType = [
     status: "non-active",
     transactions: 210,
     img: "images/IMG_20240909_145706.jpg",
-    email : "hamidrasooli@gmail.com"
+    email: "hamidrasooli@gmail.com",
   },
 ];
 
-export { xAxisData, users, transactions, userRows };
+const products: ProductsType = [
+  {
+    id: 1,
+    title: "Asus Laptop",
+    price: 42_000_000,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59dZ4dE4ytFCQrGcAUY8ZK6ZlHQWTts_KKw&s",
+  },
+  {
+    id: 2,
+    title: "HP Laptop",
+    price: 5_000_000,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59dZ4dE4ytFCQrGcAUY8ZK6ZlHQWTts_KKw&s",
+  },
+  {
+    id: 3,
+    title: "LG Laptop",
+    price: 8_000_000,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59dZ4dE4ytFCQrGcAUY8ZK6ZlHQWTts_KKw&s",
+  },
+  {
+    id: 4,
+    title: "Lenovo Laptop",
+    price: 22_000_000,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59dZ4dE4ytFCQrGcAUY8ZK6ZlHQWTts_KKw&s",
+  },
+  {
+    id: 5,
+    title: "Mace Laptop",
+    price: 86_000_000,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59dZ4dE4ytFCQrGcAUY8ZK6ZlHQWTts_KKw&s",
+  },
+];
+
+export { xAxisData, users, transactions, userRows, products };
