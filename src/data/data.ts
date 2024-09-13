@@ -1,8 +1,9 @@
-import { AxisDataType } from "../utils/Axis.types";
-import { ProductsType } from "../utils/Products.types";
-import { TransactionsType } from "../utils/Transaction.types";
-import { UserRowsType } from "../utils/UserRows.types";
-import { UsersType } from "../utils/Users.types";
+import { AxisDataType } from "../utils/types/Axis.types";
+import { ProductsType } from "../utils/types/Products.types";
+import { TransactionsType } from "../utils/types/Transaction.types";
+import { UserRowsType } from "../utils/types/UserRows.types";
+import { UsersType } from "../utils/types/Users.types";
+import { ProductsDataType } from "../utils/types/ProductsData.types";
 
 const xAxisData: AxisDataType = [
   { name: "Jan", sale: 112_000 },
@@ -146,4 +147,10 @@ const products: ProductsType = [
   },
 ];
 
-export { xAxisData, users, transactions, userRows, products };
+const productsData: ProductsDataType = [
+  { name: "Jan", sales: 4000 },
+  { name: "Feb", sales: 3000 },
+  { name: "Mar", sales: 5000 },
+];
+
+export { xAxisData, users, transactions, userRows, products, productsData };

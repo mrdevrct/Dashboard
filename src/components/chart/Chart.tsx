@@ -8,13 +8,14 @@ import {
   XAxis,
 } from "recharts";
 
-import { AxisDataType } from "../../utils/Axis.types";
+import { AxisDataType } from "../../utils/types/Axis.types";
 import "./Chart.css"
+import { ProductsDataType } from "../../utils/types/ProductsData.types";
 
 
 interface PropsType {
   title: string;
-  data: AxisDataType;
+  data: AxisDataType | ProductsDataType;
   dataKey: string;
   grid?: boolean;
 }

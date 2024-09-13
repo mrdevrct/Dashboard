@@ -1,4 +1,4 @@
-import { RoutesType } from "./utils/Route.types";
+import { RoutesType } from "./utils/types/Route.types";
 import Home from "./pages/home/Home";
 import UserList from "./pages/users/UserList";
 import NewUser from "./pages/new-user/NewUser";

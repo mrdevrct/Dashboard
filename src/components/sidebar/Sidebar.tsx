@@ -14,7 +14,7 @@ import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import ReportIcon from "@mui/icons-material/Report";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -23,12 +23,15 @@ function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Dashboard</h3>
           <ul className="sidebar-list">
-            <Link to="/" className="link">
-              <li className="sidebarList-item active">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+            >
+              <li className="sidebarList-item">
                 <LineStyleIcon className="sidebar-icon" />
                 <span>Home</span>
               </li>
-            </Link>
+            </NavLink>
 
             <li className="sidebarList-item">
               <TimelineIcon className="sidebar-icon" />
@@ -43,24 +46,33 @@ function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Quick Menu</h3>
           <ul className="sidebar-list">
-            <Link to="/users" className="link">
-              <li className="sidebarList-item active">
+            <NavLink
+              to="/users"
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+            >
+              <li className="sidebarList-item">
                 <PermIdentityIcon className="sidebar-icon" />
                 <span>Users</span>
               </li>
-            </Link>
-            <Link to="/new-user" className="link">
+            </NavLink>
+            <NavLink
+              to="/new-user"
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+            >
               <li className="sidebarList-item">
                 <PermIdentityIcon className="sidebar-icon" />
                 <span>New User</span>
               </li>
-            </Link>
-            <Link to="/products" className="link">
+            </NavLink>
+            <NavLink
+              to="/products"
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+            >
               <li className="sidebarList-item">
                 <StorefrontIcon className="sidebar-icon" />
                 <span>Products</span>
               </li>
-            </Link>
+            </NavLink>
             <li className="sidebarList-item">
               <AttachMoneyIcon className="sidebar-icon" />
               <span>Transactions</span>
@@ -74,7 +86,7 @@ function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Notifications</h3>
           <ul className="sidebar-list">
-            <li className="sidebarList-item active">
+            <li className="sidebarList-item">
               <MailOutlineIcon className="sidebar-icon" />
               <span>Mail</span>
             </li>
@@ -91,7 +103,7 @@ function Sidebar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Staff</h3>
           <ul className="sidebar-list">
-            <li className="sidebarList-item active">
+            <li className="sidebarList-item">
               <WorkOutlineIcon className="sidebar-icon" />
               <span>Manage</span>
             </li>
